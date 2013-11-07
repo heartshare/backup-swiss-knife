@@ -55,14 +55,14 @@ And declare the USER variable for each cron (used to send mails from the user).
 
 Example default cron:
 
-#Cron tasks running as root
+- Cron tasks running as root
 USER=root
-# m h  dom mon dow user  command
-# PGSQL & MySQL Backup
+
+- PGSQL & MySQL Backup
 30 1 * * * root /mnt/backups/srv/scripts/srvbackdb.pl
-# Incremental backup (from monday to saturday).
+- Incremental backup (from monday to saturday).
 30 2 * * 1-6 root /mnt/backups/srv/scripts/srvback-www-incremental.pl
-# New Full backup (each sunday) and rotate the old full backup with all the incrementals.
+- New Full backup (each sunday) and rotate the old full backup with all the incrementals.
 30 2 * * 0 root /mnt/backups/srv/scripts/srvback-www-full.pl
 
 Add new server to backup
