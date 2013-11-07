@@ -1,0 +1,17 @@
+{
+"host":"10.10.2.20",
+"mysql_user":"backup",
+"mysql_pass":"MySQLP@ssw0rd",
+"mysql_dir":"/mnt/backups/srv/db/mysql",
+"mysql_exclude_db":"test mysql performance_schema information_schema",
+"pgsql_user":"backup",
+"pgsql_pass":"PgSQLP@ssw0rd",
+"pgsql_databases":"wikidb db2",
+"pg_extables":"",
+"pgsql_dir":"/mnt/backups/srv/db/pgsql",
+"www_backdir":"/mnt/backups/srv/www/current",
+"www_rotatedir":"/mnt/backups/srv/www/old",
+"ssh_user":"backuser",
+"www_dir":"/var/www",
+"www_excludedir":"log tmp"
+}
