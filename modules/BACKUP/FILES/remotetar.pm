@@ -52,7 +52,7 @@ sub rotate_full_tar{
 	my $logfile=shift;
 	my $year=`date +%Y`;
 	my $month=`date +%m`;
-	my $week_number=`date +%w`;
+	my $week_number=`date +%U`;
 	my @files=`ls $backdir`;
 	my $is_new=0;
 	my $tar_return=0;
